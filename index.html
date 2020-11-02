@@ -32,12 +32,13 @@
             )
         }
 
-        function Main(){
+        function Main(props){
+            let name = props.name
             return(
 
                 <main>
                     <section id="introduction">
-                        <p>Hi I'm Sally I'm 25 and below this line you'll find more information about me.</p>
+                        <p>Hi I'm {name}. I'm 25 and below this line you'll find more information about me.</p>
                     </section>
                     <br/>
                     <section id="Education">
@@ -83,7 +84,7 @@
         return (
         <div>
             <Header />
-            <Main />
+            <Main name='Sally'/>
         </div>
         )
         }
